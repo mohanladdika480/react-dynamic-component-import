@@ -52,6 +52,49 @@ const loadComponent = async () => {
 };
 ```
 
+### Example Folder Structure
+
+```plaintext
+src/
+  ├── components/
+  │   ├── DynamicLoaderInfo.js
+  │   ├── Javascript/
+  │   │   ├── Arrays/
+  │   │   │   └── Arrays.js
+  │   │   ├── Functions/
+  │   │   │   └── Functions.js
+  │   │   ├── Objects/
+  │   │   │   └── Objects.js
+  │   │   ├── Promises/
+  │   │   │   └── Promises.js
+  │   │   ├── Variables/
+  │   │   │   └── Variables.js
+  │   ├── Menu/
+  │   │   └── Menu.js
+  │   ├── React/
+  │   │   ├── Components/
+  │   │   │   └── Components.js
+  │   │   ├── Context/
+  │   │   │   └── Context.js
+  │   │   ├── Hooks/
+  │   │   │   └── Hooks.js
+  │   │   ├── JSX/
+  │   │   │   └── JSX.js
+  │   │   ├── StateAndLifecycle/
+  │   │   │   └── StateAndLifecycle.js
+  │   │   └── ReactConcepts.js
+  ├── index.scss
+  └── App.js
+```
+
+### Example Usage
+
+To load a specific component, update the URL hash to the desired component name. For example:
+
+- `#JavascriptConcepts` - Loads the JavaScript Concepts component.
+- `#ReactConcepts` - Loads the React Concepts component.
+- `#Javascript_Variables` - Loads the JavaScript Variables component.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -78,6 +121,14 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run predeploy`
+
+Runs the build script before deploying the app to GitHub Pages.\
+
+### `npm run deploy`
+
+Deploys the app to GitHub Pages.\
 
 ### `npm run eject`
 
