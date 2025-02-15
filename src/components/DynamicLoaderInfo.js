@@ -21,6 +21,17 @@ const DynamicLoaderInfo = () => {
       </ul>
       <p>For example, the hash <code>#Javascript_Variables</code> is split into <code>base = "Javascript"</code> and <code>subComponent = "Variables"</code>.</p>
       
+      <h2>Example Hashes for Main Categories and Their Concepts</h2>
+      <p>Here are some example hashes that can be used to load main categories and their specific concepts:</p>
+      <ul>
+        <li><code>#JavascriptConcepts</code> - Loads the main JavaScript Concepts component.</li>
+        <li><code>#Javascript_Arrays</code> - Loads the JavaScript Arrays component.</li>
+        <li><code>#Javascript_Functions</code> - Loads the JavaScript Functions component.</li>
+        <li><code>#ReactConcepts</code> - Loads the main React Concepts component.</li>
+        <li><code>#React_Hooks</code> - Loads the React Hooks component.</li>
+        <li><code>#React_JSX</code> - Loads the React JSX component.</li>
+      </ul>
+
       <h2>Dynamic Import Code Snippet</h2>
       <pre>
         <code>
@@ -58,41 +69,38 @@ const DynamicLoaderInfo = () => {
       <pre>
         <code>
           {`src/
-  components/
-    Javascript/
-      JavascriptConcepts.js
-      Variables/
-        Variables.js
-      Functions/
-        Functions.js
-      Objects/
-        Objects.js
-      Arrays/
-        Arrays.js
-      Promises/
-        Promises.js
-    React/
-      ReactConcepts.js
-      JSX/
-        JSX.js
-      Components/
-        Components.js
-      StateAndLifecycle/
-        StateAndLifecycle.js
-      Hooks/
-        Hooks.js
-      Context/
-        Context.js`}
+  ├── components/
+  │   ├── DynamicComponentLoader.js
+  **************
+  │   ├── Javascript/
+  │   │   ├── Arrays/
+  │   │   │   └── Arrays.js
+  │   │   ├── Functions/
+  │   │   │   └── Functions.js
+  │   │   ├── Objects/
+  │   │   │   └── Objects.js
+  │   │   ├── Promises/
+  │   │   │   └── Promises.js
+  │   │   └── JavascriptConcepts.js
+  │   ├── React/
+  │   │   ├── Hooks/
+  │   │   │   └── Hooks.js
+  │   │   ├── JSX/
+  │   │   │   └── JSX.js
+  │   │   ├── StateAndLifecycle/
+  │   │   │   └── StateAndLifecycle.js
+  │   │   └── ReactConcepts.js
+  **************
+  │   ├── FallbackComponent.js
+  │   ├── DynamicLoaderInfo.js
+  │   ├── Menu
+  │   │   └── Menu.js  
+  │   └── Concepts/
+  │        └── Concepts.js
+  ├── index.scss
+  └── App.js`}
         </code>
       </pre>
-      
-      <h2>Example Usage</h2>
-      <p>To load a specific component, update the URL hash to the desired component name. For example:</p>
-      <ul>
-        <li><code>#JavascriptConcepts</code> - Loads the JavaScript Concepts component.</li>
-        <li><code>#ReactConcepts</code> - Loads the React Concepts component.</li>
-        <li><code>#Javascript_Variables</code> - Loads the JavaScript Variables component.</li>
-      </ul>
     </div>
   );
 };
