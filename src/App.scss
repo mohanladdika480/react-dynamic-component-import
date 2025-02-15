@@ -1,0 +1,13 @@
+@import "./styles/variables.scss";
+.app {
+  .app-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 40px 40px;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 16px 16px;
+    }
+  }
+}

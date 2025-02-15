@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.concepts-container {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.concepts-list {
+  width: fit-content;
+}
+
+.concept-item {
+  font-weight: $font-weight-semibold;
+  margin: 8px 0;
+  padding-left: 12px;
+}
+
+.concept-item a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .concepts-container {
+    padding: 0 10px;
+  }
+}
