@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-dynamic-component-import/static/css/main.1664590f.css",
-    "main.js": "/react-dynamic-component-import/static/js/main.dfcf1146.js",
+    "main.js": "/react-dynamic-component-import/static/js/main.640ed230.js",
     "static/css/6.a554d119.chunk.css": "/react-dynamic-component-import/static/css/6.a554d119.chunk.css",
     "static/js/6.bf69be0b.chunk.js": "/react-dynamic-component-import/static/js/6.bf69be0b.chunk.js",
     "static/css/241.a554d119.chunk.css": "/react-dynamic-component-import/static/css/241.a554d119.chunk.css",
@@ -23,7 +23,7 @@
     "static/js/453.24e676df.chunk.js": "/react-dynamic-component-import/static/js/453.24e676df.chunk.js",
     "index.html": "/react-dynamic-component-import/index.html",
     "main.1664590f.css.map": "/react-dynamic-component-import/static/css/main.1664590f.css.map",
-    "main.dfcf1146.js.map": "/react-dynamic-component-import/static/js/main.dfcf1146.js.map",
+    "main.640ed230.js.map": "/react-dynamic-component-import/static/js/main.640ed230.js.map",
     "6.a554d119.chunk.css.map": "/react-dynamic-component-import/static/css/6.a554d119.chunk.css.map",
     "6.bf69be0b.chunk.js.map": "/react-dynamic-component-import/static/js/6.bf69be0b.chunk.js.map",
     "241.a554d119.chunk.css.map": "/react-dynamic-component-import/static/css/241.a554d119.chunk.css.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.1664590f.css",
-    "static/js/main.dfcf1146.js"
+    "static/js/main.640ed230.js"
   ]
 }
