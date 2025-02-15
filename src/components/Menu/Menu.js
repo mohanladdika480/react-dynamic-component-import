@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Menu.scss";
 
 const Menu = () => {
@@ -15,6 +15,13 @@ const Menu = () => {
     { name: "CSS", href: "#css" },
     { name: "SCSS", href: "#scss" },
   ];
+
+  useEffect(() => { 
+    let [base] = window.location.hash?.replace(/(#|Concepts)/g, "")?.split("_");
+    if (base) {
+      setActiveTab(base?.toLowerCase());
+    }
+  }, []);
 
   return (
     <div className="menu">
