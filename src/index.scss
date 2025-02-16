@@ -40,7 +40,7 @@ ul {
   padding-left: 36px;
 
   li {
-    margin: 0;
+    margin: 0 0 2.5px 0;
     text-align: left;
   }
 }
@@ -54,6 +54,15 @@ a {
 p {
   margin: 8px 0;
 }
+
+.no_margin {
+  margin: 0;
+}
+
+.mb_4 {
+  margin-bottom: 4px;
+}
+
 
 @media screen and (max-width: 600px) {
   h1 {

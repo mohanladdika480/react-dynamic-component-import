@@ -9,6 +9,7 @@ const Menu = () => {
   };
   const tabs = [
     { name: "Home", href: "#" },
+    { name: "Topics", href: "#Topics" },
     { name: "JavaScript", href: "#JavascriptConcepts" },
     { name: "React", href: "#ReactConcepts" },
     { name: "HTML", href: "#html" },
@@ -30,7 +31,7 @@ const Menu = () => {
           {tabs.map((tab) => (
             <li
               key={tab.name}
-              className={`menu-item ${
+              className={`menu-item no_margin ${
                 activeTab === tab.name.toLowerCase() ? "active" : ""
               }`}
             >

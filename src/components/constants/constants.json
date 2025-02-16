@@ -1,0 +1,221 @@
+{
+  "reactTopicsList": [
+    {
+      "name": "Core React Concepts",
+      "items": [
+        "<i>JSX (JavaScript XML) </i>– Writing HTML in JavaScript",
+        "<i>Components </i>– Functional & Class Components",
+        "<i>Props </i>– Passing data from parent to child",
+        "<i>Prop Drilling </i>– Avoiding unnecessary prop passing",
+        "<i>State & setState (useState) </i>– Managing component state",
+        "<i>Event Handling in React </i>– Handling user interactions",
+        "<i>Conditional Rendering </i>– Using if, &&, ternary operators",
+        "<i>Lists & Keys </i>– Efficiently rendering lists with unique keys",
+        "<i>Reconciliation & Virtual DOM </i>– How React updates UI efficiently",
+        "<i>Higher-Order Components (HOC) </i>– Reusing component logic (withAuth, etc.)",
+        "<i>Render Props Pattern </i>– Alternative to HOCs for code sharing",
+        "<i>Portals </i>– Rendering components outside the main DOM tree"
+      ]
+    },
+    {
+      "name": "React Component Lifecycle",
+      "items": [
+        "<i>Mounting, Updating, and Unmounting Phases </i>– Lifecycle stages of a component",
+        "<i>Lifecycle Methods (Class Components) </i>– componentDidMount, componentDidUpdate, componentWillUnmount",
+        "<i>getDerivedStateFromProps </i>– Updating state based on prop changes (rare but useful)",
+        "<i>shouldComponentUpdate </i>– Performance optimization in class components",
+        "<i>useEffect Hook </i>– Managing side effects in functional components"
+      ]
+    },
+    {
+      "name": "React Hooks (Functional Component Features)",
+      "items": [
+        "<i>useState() </i>– Managing local component state",
+        "<i>useEffect() </i>– Handling side effects (API calls, event listeners, etc.)",
+        "<i>useContext() </i>– Managing global state without prop drilling",
+        "<i>useRef() </i>– Accessing DOM elements and persisting values without re-rendering",
+        "<i>useMemo() </i>– Performance optimization for expensive calculations",
+        "<i>useCallback() </i>– Memoizing functions to prevent unnecessary re-renders",
+        "<i>useReducer() </i>– Alternative to useState for complex state logic",
+        "<i>useLayoutEffect() </i>– Running effects before browser paint",
+        "<i>useLayoutEffect vs. useEffect </i>– Difference in execution timing",
+        "<i>Custom Hooks </i>– Creating reusable logic",
+        "<i>useTransition() </i>– Deferring updates for smooth UI rendering",
+        "<i>useDeferredValue() </i>– Optimizing expensive computations",
+        "<i>useId() </i>– Generating unique IDs for accessibility",
+        "<i>useImperativeHandle </i>– Customizing ref behavior"
+      ]
+    },
+
+    {
+      "name": "React Component Communication",
+      "items": [
+        "<i>Parent to Child </i>– Using Props",
+        "<i>Child to Parent </i>– Using Callback Functions",
+        "<i>Sibling Communication </i>– Lifting State Up",
+        "<i>Global State Management </i>– Context API, Redux, Recoil, Zustand"
+      ]
+    },
+    {
+      "name": "State Management in React",
+      "items": [
+        "<i>Local State </i>– Managed with useState",
+        "<i>Global State </i>– useContext, Redux, Zustand, Recoil",
+        "<i>Context API </i>– Lightweight global state management",
+        "<i>Redux </i>– Centralized state management",
+        "<i>Actions, Reducers, Store, Dispatch </i>– Core Redux concepts",
+        "<i>useDispatch() & useSelector() </i>– Accessing Redux state and actions",
+        "<i>Redux Toolkit (RTK) </i>– Simplified Redux with slices and async logic",
+        "<i>Middleware (Thunk, Saga) </i>– Handling async actions in Redux",
+        "<i>Recoil, Zustand, Jotai </i>– Alternative state management libraries",
+        "<i>Efficient State Updates </i>– Using functional updates (setState(prev => newState))"
+      ]
+    },
+    {
+      "name": "React Router (Client-Side Routing)",
+      "items": [
+        "<i>react-router-dom </i>– Navigation in React",
+        "<i>React Router v6+ </i>– Latest features and improvements",
+        "<i>BrowserRouter vs. HashRouter vs. MemoryRouter </i>– Choosing the right router",
+        "<i>Route & Switch (deprecated) </i>– Routing in React",
+        "<i>Link, NavLink </i>– Navigation components",
+        "<i>useNavigate(), useParams(), useLocation() </i>– Programmatic navigation",
+        "<i>Dynamic Routing & Route Parameters </i>– Creating flexible routes",
+        "<i>Nested Routes </i>– Structuring routes hierarchically",
+        "<i>Protected Routes </i>– Authentication-based navigation",
+        "<i>Lazy Loading Routes </i>– Optimizing performance with React.lazy()",
+        "<i>Scroll Restoration </i>– Maintaining scroll position across navigation (useLocation)"
+      ]
+    },
+    {
+      "name": "Forms & Validation",
+      "items": [
+        "<i>Controlled vs. Uncontrolled Components </i>– Handling form data",
+        "<i>Handling Input Fields </i>– onChange, value, useState",
+        "<i>React Hook Form </i>– Efficient form management (modern)",
+        "<i>Formik & Yup </i>– Validation and form handling",
+        "<i>Handling File Uploads </i>– Managing file input",
+        "<i>Multi-step Forms </i>– Managing complex form workflows"
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "items": [
+        "<i>React.memo() </i>– Prevent unnecessary renders",
+        "<i>useMemo() & useCallback() </i>– Optimizing calculations and functions",
+        "<i>Lazy Loading & Code Splitting </i>– React.lazy(), Suspense",
+        "<i>Virtualization </i>– Rendering large lists efficiently (react-window, react-virtualized)",
+        "<i>Debouncing & Throttling </i>– Optimizing event handling (lodash.debounce())",
+        "<i>Avoiding unnecessary re-renders </i>– Using useRef, useEffect dependencies",
+        "<i>Concurrent Rendering </i>– Optimizing UI responsiveness",
+        "<i>React Profiler </i>– Measuring component performance"
+      ]
+    },
+    {
+      "name": "React and API Handling",
+      "items": [
+        "<i>Fetching Data </i>– Using fetch & Axios",
+        "<i>Pagination & Infinite Scroll </i>– Optimizing API calls (React Query, useInfiniteQuery)",
+        "<i>WebSockets </i>– Real-time data handling (Socket.io)",
+        "<i>Polling & Debouncing </i>– Efficient API request patterns",
+        "<i>GraphQL with React </i>– Fetching optimized data (Apollo Client, Relay)",
+        "<i>Suspense for Data Fetching </i>– Avoiding excessive loading states"
+      ]
+    },
+    {
+      "name": "Error Handling & Debugging",
+      "items": [
+        "<i>Error Boundaries </i>– Catching component errors",
+        "<i>Try/Catch & Logging Errors </i>– Handling runtime issues",
+        "<i>React Developer Tools </i>– Debugging React applications",
+        "<i>Testing Components </i>– Using Jest & React Testing Library"
+      ]
+    },
+    {
+      "name": "Authentication & Authorization",
+      "items": [
+        "<i>JWT (JSON Web Token) Authentication </i>– Secure user sessions",
+        "<i>OAuth </i>– Google, Facebook login integration",
+        "<i>Role-based Access Control (RBAC) </i>– Managing permissions",
+        "<i>Protected Routes </i>– Restricting access based on authentication",
+        "<i>Storing Tokens Securely </i>– Using LocalStorage & HttpOnly Cookies"
+      ]
+    },
+    {
+      "name": "UI Libraries & Styling",
+      "items": [
+        "<i>CSS Modules </i>– Scoped styles",
+        "<i>Styled Components </i>– CSS-in-JS approach",
+        "<i>Tailwind CSS </i>– Utility-first CSS framework",
+        "<i>Material-UI (MUI) </i>– Popular UI component library",
+        "<i>Chakra UI </i>– Accessible component library",
+        "<i>Ant Design (AntD) </i>– Enterprise-level UI framework",
+        "<i>Theme Customization </i>– Global styling and theming",
+        "<i>Framer Motion </i>– Modern animation library for React"
+      ]
+    },
+    {
+      "name": "React Testing",
+      "items": [
+        "<i>Unit Testing </i>– Testing individual components (Jest)",
+        "<i>Integration Testing </i>– Ensuring multiple components work together",
+        "<i>End-to-End (E2E) Testing </i>– Using Cypress & Playwright",
+        "<i>Mocking API Calls </i>– Using MSW or Jest mocks",
+        "<i>Snapshot Testing </i>– Checking UI consistency (react-test-renderer)"
+      ]
+    },
+    {
+      "name": "React and TypeScript",
+      "items": [
+        "<i>Type Checking Props & State </i>",
+        "<i>Interfaces vs. Types </i>",
+        "<i>Generics in React Components </i>",
+        "<i>Context API with TypeScript </i>",
+        "<i>Utility Types in TypeScript </i>"
+      ]
+    },
+    {
+      "name": "Server-Side Rendering (SSR) & Static Site Generation (SSG)",
+      "items": [
+        "<i>Next.js </i>– React framework for SSR/SSG",
+        "<i>Incremental Static Regeneration (ISR) </i>– Improving page loading speed",
+        "<i>API Routes </i>– Backend functionality in Next.js",
+        "<i>SEO Optimization with Next.js </i>– Improving search rankings"
+      ]
+    },
+    {
+      "name": "Web Performance & Optimization",
+      "items": [
+        "<i>Lighthouse Auditing </i>– Evaluating website performance",
+        "<i>First Contentful Paint (FCP) Optimization </i>– Faster page loads",
+        "<i>Lazy Loading Images & Components </i>– Reducing initial load time",
+        "<i>Minifying JavaScript & CSS </i>– Reducing bundle size"
+      ]
+    },
+    {
+      "name": "React Build & Deployment",
+      "items": [
+        "<i>Webpack & Babel </i>– Bundling and transpiling React apps",
+        "<i>Vite </i>– Faster build tool for React",
+        "<i>Environment Variables </i>– Managing .env files",
+        "<i>Hosting & Deployment </i>– Deploying to Vercel, Netlify, Firebase, AWS"
+      ]
+    },
+    {
+      "name": "Accessibility (a11y)",
+      "items": [
+        "<i>ARIA Attributes </i>– Improving usability for screen readers",
+        "<i>Keyboard Navigation </i>– Handling tab and enter interactions",
+        "<i>Semantic HTML </i>– Using proper elements for better accessibility"
+      ]
+    },
+    {
+      "name": "Micro Frontends (Advanced)",
+      "items": [
+        "<i>Concept of Micro Frontends </i>– Breaking monolithic UI into smaller apps",
+        "<i>Module Federation in Webpack </i>– Sharing React components across apps",
+        "<i>Integrating Multiple React Apps </i>– Scalable frontend architecture"
+      ]
+    }
+  ]
+}
