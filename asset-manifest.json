@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/react-dynamic-component-import/static/css/main.26dd1df2.css",
-    "main.js": "/react-dynamic-component-import/static/js/main.ee565240.js",
+    "main.js": "/react-dynamic-component-import/static/js/main.09efbd3a.js",
+    "static/js/552.0b6d7d3e.chunk.js": "/react-dynamic-component-import/static/js/552.0b6d7d3e.chunk.js",
     "static/css/6.a554d119.chunk.css": "/react-dynamic-component-import/static/css/6.a554d119.chunk.css",
     "static/js/6.f1584223.chunk.js": "/react-dynamic-component-import/static/js/6.f1584223.chunk.js",
     "static/css/241.a554d119.chunk.css": "/react-dynamic-component-import/static/css/241.a554d119.chunk.css",
@@ -20,13 +21,14 @@
     "static/css/335.a554d119.chunk.css": "/react-dynamic-component-import/static/css/335.a554d119.chunk.css",
     "static/js/335.e2c13181.chunk.js": "/react-dynamic-component-import/static/js/335.e2c13181.chunk.js",
     "static/js/302.2033e95a.chunk.js": "/react-dynamic-component-import/static/js/302.2033e95a.chunk.js",
-    "static/js/588.32931803.chunk.js": "/react-dynamic-component-import/static/js/588.32931803.chunk.js",
+    "static/js/588.0cfa8f94.chunk.js": "/react-dynamic-component-import/static/js/588.0cfa8f94.chunk.js",
     "static/js/409.340c9aad.chunk.js": "/react-dynamic-component-import/static/js/409.340c9aad.chunk.js",
     "static/js/453.7ea9ede8.chunk.js": "/react-dynamic-component-import/static/js/453.7ea9ede8.chunk.js",
-    "static/js/891.8f01c164.chunk.js": "/react-dynamic-component-import/static/js/891.8f01c164.chunk.js",
+    "static/js/46.eddb1412.chunk.js": "/react-dynamic-component-import/static/js/46.eddb1412.chunk.js",
     "index.html": "/react-dynamic-component-import/index.html",
     "main.26dd1df2.css.map": "/react-dynamic-component-import/static/css/main.26dd1df2.css.map",
-    "main.ee565240.js.map": "/react-dynamic-component-import/static/js/main.ee565240.js.map",
+    "main.09efbd3a.js.map": "/react-dynamic-component-import/static/js/main.09efbd3a.js.map",
+    "552.0b6d7d3e.chunk.js.map": "/react-dynamic-component-import/static/js/552.0b6d7d3e.chunk.js.map",
     "6.a554d119.chunk.css.map": "/react-dynamic-component-import/static/css/6.a554d119.chunk.css.map",
     "6.f1584223.chunk.js.map": "/react-dynamic-component-import/static/js/6.f1584223.chunk.js.map",
     "241.a554d119.chunk.css.map": "/react-dynamic-component-import/static/css/241.a554d119.chunk.css.map",
@@ -45,12 +47,12 @@
     "335.a554d119.chunk.css.map": "/react-dynamic-component-import/static/css/335.a554d119.chunk.css.map",
     "335.e2c13181.chunk.js.map": "/react-dynamic-component-import/static/js/335.e2c13181.chunk.js.map",
     "302.2033e95a.chunk.js.map": "/react-dynamic-component-import/static/js/302.2033e95a.chunk.js.map",
-    "588.32931803.chunk.js.map": "/react-dynamic-component-import/static/js/588.32931803.chunk.js.map",
+    "588.0cfa8f94.chunk.js.map": "/react-dynamic-component-import/static/js/588.0cfa8f94.chunk.js.map",
     "453.7ea9ede8.chunk.js.map": "/react-dynamic-component-import/static/js/453.7ea9ede8.chunk.js.map",
-    "891.8f01c164.chunk.js.map": "/react-dynamic-component-import/static/js/891.8f01c164.chunk.js.map"
+    "46.eddb1412.chunk.js.map": "/react-dynamic-component-import/static/js/46.eddb1412.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26dd1df2.css",
-    "static/js/main.ee565240.js"
+    "static/js/main.09efbd3a.js"
   ]
 }
