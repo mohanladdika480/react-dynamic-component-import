@@ -3,7 +3,7 @@ import Concepts from '../Concepts/Concepts';
 
 const ReactConcepts = () => {
   const concepts = [
-    { name: 'JSX', link: 'React_JSX' },
+    { name: 'Core React', link: 'React_CoreReact' },
     { name: 'Components', link: 'React_Components' },
     { name: 'State and Lifecycle', link: 'React_StateAndLifecycle' },
     { name: 'Hooks', link: 'React_Hooks' },
