@@ -4,16 +4,16 @@
       "name": "Core React Concepts",
       "items": [
         "<i>JSX (JavaScript XML) </i>– Writing HTML in JavaScript",
+        "<i>Reconciliation & Virtual DOM </i>– How React updates UI efficiently",
         "<i>Components </i>– Functional & Class Components",
         "<i>Props </i>– Passing data from parent to child",
         "<i>Prop Drilling </i>– Avoiding unnecessary prop passing",
+        "<i>Render Props Pattern </i>– Alternative to HOCs for code sharing",
+        "<i>Higher-Order Components (HOC) </i>– Reusing component logic (withAuth, etc.)",
         "<i>State & setState (useState) </i>– Managing component state",
         "<i>Event Handling in React </i>– Handling user interactions",
         "<i>Conditional Rendering </i>– Using if, &&, ternary operators",
         "<i>Lists & Keys </i>– Efficiently rendering lists with unique keys",
-        "<i>Reconciliation & Virtual DOM </i>– How React updates UI efficiently",
-        "<i>Higher-Order Components (HOC) </i>– Reusing component logic (withAuth, etc.)",
-        "<i>Render Props Pattern </i>– Alternative to HOCs for code sharing",
         "<i>Portals </i>– Rendering components outside the main DOM tree"
       ]
     },
