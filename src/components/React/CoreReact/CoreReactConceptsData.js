@@ -714,8 +714,9 @@ return <button onClick={handleClick}>Click Me</button>;
       `Synthetic events are used to handle events in React components and provide a consistent interface across different browsers.`,
       `Event pooling is a technique used by React to reuse event objects, improving performance and reducing memory usage.`,
       `Events when used in setTimeout or asynchronous functions, the event object may be null or undefined due to the asynchronous nature of React.`,
-      `To `
-    ]
+      `To access event properties in asynchronous functions, store the event object in a variable before using it.`,
+    ],
+    padLeft: true,
   },
   {
     contentName: "3. Conditional Rendering in React",
