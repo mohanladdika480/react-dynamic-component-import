@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfrontend_concepts=self.webpackChunkfrontend_concepts||[]).push([[642],{5642:(e,n,t)=>{t.r(n),t.d(n,{componentLifeCycle:()=>c});const c=[{contentName:"React Component Lifecycle",contentList:["React component lifecycle is a series of methods that are invoked in different stages of the component's existence. These methods are called lifecycle methods.","React component has three main phases: Mounting, Updating, and Unmounting."]}]}}]);
-//# sourceMappingURL=642.8eaad495.chunk.js.map
