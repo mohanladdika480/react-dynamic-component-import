@@ -1,6 +1,13 @@
 import React from "react";
 import ContentRenderer from "../../Common/ContentRenderer";
-import {reactConcepts, reactComponents, reactProps, reactListsAndKeys}  from "./CoreReactConceptsData";
+import {
+  reactConcepts,
+  reactComponents,
+  reactProps,
+  reactListsAndKeys,
+  reactPortals,
+  databindings,
+} from "./CoreReactConceptsData";
 
 const reactCoreList = {
   topic: "Core React",
@@ -20,7 +27,15 @@ const reactCoreList = {
     {
       topicName: "Lists and Keys, Event Handling and Conditional Rendering",
       detailedList: reactListsAndKeys,
-    }
+    },
+    {
+      topicName: "Portals in React",
+      detailedList: reactPortals,
+    },
+    {
+      topicName: "Data Binding in React",
+      detailedList: databindings,
+    },
   ],
 };
 

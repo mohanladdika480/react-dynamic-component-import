@@ -755,7 +755,6 @@ if (isLoading) {
   },
 ];
 
-
 const reactPortals = [
   {
     contentName: "1. Portals in React",
@@ -791,7 +790,129 @@ function App() {
       `Real time examples: payment modals, tooltips, popovers, lightboxes, etc.`,
     ],
     padLeft: true,
-  }
-]
+  },
+];
 
-export { reactConcepts, reactComponents, reactProps, reactListsAndKeys };
+const databindings = [
+  {
+    contentName: "1. Data Bindings in Frontend",
+    contentList: [
+      `It is a technique to connect data from the model (data source) to the view (UI) in frontend applications, ensuring that changes in data automatically reflect in the UI and vice versa.`,
+      `Data bindings help in creating dynamic and interactive user interfaces by synchronizing the data and UI components.`,
+      `Model-view-controller (MVC) and model-view-viewmodel (MVVM) are common design patterns that use data bindings to connect the data and UI components.`,
+      `Data bindings are used in frontend frameworks like Angular, React, Vue, and libraries like Knockout.js to create reactive and responsive applications.`,
+      `There are two types of data bindings: one-way data binding (from model to view) and two-way data binding (between model and view).`,
+    ],
+  },
+  {
+    contentName: "a. Data Flow in Frontend Applications",
+    contentList: [
+      `Data flows from the model (data source) to the view (UI) in frontend applications.`,
+      `When the data changes in the model, the view is updated to reflect the changes.`,
+      `Data bindings ensure that the UI components are always in sync with the data, providing a reactive and responsive user interface.`,
+      `Data flow is essential for creating dynamic and interactive applications that respond to user inputs and changes in data.`,
+      `The data flows from the model to the view or vice versa, and sometimes both ways depending on the type of data binding used.`,
+    ],
+    padLeft: true,
+  },
+  {
+    contentName: "2. One-Way Data Binding (Single source of truth)",
+    contentList: [
+      `One-way data binding is also known as unidirectional data flow.`,
+      `It is a pattern where data flows in a single direction, either from the model to the view or from the view to the model, but not both simultaneously.`,
+      `Changes in the model automatically update the view, but changes in the view do not affect the model directly.`,
+      `This approach is simpler and more predictable compared to two-way data binding, as it enforces a clear flow of data and reduces the risk of unintended side effects.`,
+      `<b>Example (React):</b> A component state or props are used to render the UI. When the state or props change, the React's rendering mechanism updates the UI components accordingly. <b>(This is model to view binding)</b>`,
+    ],
+  },
+  {
+    contentName: "a. Advantages of One-Way Data Binding",
+    contentList: [
+      `Simpler and more predictable data flow.`,
+      `Reduces the risk of unintended side effects.`,
+      `Easier to debug and maintain.`,
+      `Enforces a clear separation of concerns between data and UI.`,
+    ],
+    padLeft: true,
+  },
+  {
+    contentName: "b. View to Model in One-Way Data Binding",
+    contentList: [
+      `The most commonly used way in One-Way Data Binding is model to view binding, where the data flows from the model to the view.`,
+      `In this approach, changes in the model automatically update the view, but changes in the view do not affect the model directly.`,
+      `To make changes in the model, from the view (UI), changes made in the UI are captured by event handlers (user interactions in the view), which then update the model accordingly.`,
+      `However, changes to the model, do not automatically update the view, but the view is updated when the model changes are detected.`,
+    ],
+    padLeft: true,
+  },
+  {
+    contentName: "3. Two-Way Data Binding (Bi-directional data flow)",
+    contentList: [
+      `Two-way data binding is a pattern where data flows in both directions, from the model to the view and vice versa.`,
+      `This means that changes in the model automatically update the view, and changes in the view update the model as well.`,
+      `Two-way data binding is commonly used in frameworks like Angular, where changes in the UI components are automatically reflected in the model and vice versa.`,
+      `While two-way data binding simplifies development by automatically synchronizing the data and UI, it can also lead to complex data flows and unintended side effects.`,
+    ],
+  },
+  {
+    contentName: "a. Advantages of Two-Way Data Binding",
+    contentList: [
+      `Automatically synchronizes data and UI components.`,
+      `Simplifies development by reducing the need for manual data updates.`,
+      `Provides a more interactive and responsive user interface.`,
+      `Commonly used in frameworks like Angular for rapid development.`,
+    ],
+    padLeft: true,
+  },
+  {
+    contentName: "4. How do you achieve Two-Way Data Binding in React?",
+    contentList: [
+      `In React, two-way data binding is not natively supported like in Angular or Vue.`,
+      `React follows a unidirectional data flow by default, where data flows from the model to the view.`,
+      `However, you can achieve two-way data binding in React by combining state management with event handling. This approach allows you to keep the UI in sync with the data and vice versa.`,
+      `<b>Example:</b> Using controlled components in React to create two-way data binding by updating the state based on user inputs and reflecting the state changes in the UI.`,
+    ],
+    contentCodeBlock: `function MyComponent() {
+  const [name, setName] = useState('John'); // State to manage the input value
+
+  const handleChange = (event) => {
+    setName(event.target.value); // Update the state when the input changes
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={name} // Bind the input value to the state
+        onChange={handleChange} // Handle changes to update the state
+      />
+      <p>Hello, {name}!</p>
+    </div>
+  );
+}
+  
+// How it works:
+a. The input value is bound to the state using value={name}.
+b. The handleChange function updates the state when the input changes.
+c. The state change triggers a re-render, updating the UI with the new value.
+d. This way the data model and the UI are kept in sync.`,
+  },
+  {
+    contentName: "5. When to use One-Way vs Two-Way Data Binding?",
+    contentList: [
+      `Use one-way data binding (unidirectional data flow) for simpler and more predictable data flows.`,
+      `One-way data binding enforces a clear separation of concerns between data and UI, reducing the risk of unintended side effects.`,
+      `Use two-way data binding for rapid development and interactive user interfaces where changes in the UI should automatically update the data and vice versa.`,
+      `Two-way data binding simplifies development by automatically synchronizing the data and UI components, but can lead to complex data flows and unintended side effects.`,
+    ],
+  }
+];
+
+export {
+  reactConcepts,
+  reactComponents,
+  reactProps,
+  reactListsAndKeys,
+  reactPortals,
+  databindings,
+};
