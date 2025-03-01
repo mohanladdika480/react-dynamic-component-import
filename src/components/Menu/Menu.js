@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./Menu.scss";
 
+export const tabs = [
+  { name: "Home", href: "#" },
+  { name: "Topics", href: "#Topics" },
+  { name: "JavaScript", href: "#JavascriptConcepts" },
+  { name: "React", href: "#ReactConcepts" },
+  { name: "HTML", href: "#html" },
+  { name: "CSS", href: "#css" },
+  { name: "SCSS", href: "#scss" },
+];
+
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("home");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-  const tabs = [
-    { name: "Home", href: "#" },
-    { name: "Topics", href: "#Topics" },
-    { name: "JavaScript", href: "#JavascriptConcepts" },
-    { name: "React", href: "#ReactConcepts" },
-    { name: "HTML", href: "#html" },
-    { name: "CSS", href: "#css" },
-    { name: "SCSS", href: "#scss" },
-  ];
 
   useEffect(() => { 
     let [base] = window.location.hash?.replace(/(#|Concepts)/g, "")?.split("_");

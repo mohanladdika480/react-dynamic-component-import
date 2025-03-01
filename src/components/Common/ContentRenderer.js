@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 import CommonButton from "./CommonButton";
+import { tabs } from "../Menu/Menu";
 
 /**
  * ContentRenderer component renders the main topic and its subtopics.
@@ -15,6 +16,13 @@ const ContentRenderer = ({ conceptData }) => {
 
   const handleDisplayContent = (index) => {
     setDisplayContentIndex(index + 1);
+  };
+
+  const handleBackMain = () => {
+    window.scrollTo(0, 0, "smooth");
+    const [main] = window.location.hash?.replace("#", "")?.split("_");
+    if (main)
+      window.location.hash = tabs?.find((tab) => tab.name === main)?.href;
   };
 
   const handleBack = () => {
@@ -113,7 +121,15 @@ const ContentRenderer = ({ conceptData }) => {
 
   return (
     <>
-      <h1>{topic}</h1>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box title="Back to Main" component={"span"} className="display_flex">
+          <ArrowBack
+            onClick={handleBackMain}
+            sx={{ mr: "10px", cursor: "pointer" }}
+          />
+        </Box>
+        <h1>{topic}</h1>
+      </Box>
       {displayContentIndex ? (
         renderSubContent()
       ) : (
