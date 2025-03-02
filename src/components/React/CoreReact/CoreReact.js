@@ -33,7 +33,7 @@ const reactCoreList = {
       detailedList: reactPortals,
     },
     {
-      topicName: "Data Binding in React",
+      topicName: "Data Binding in React, SPA & MPA",
       detailedList: databindings,
     },
   ],

@@ -148,6 +148,44 @@ const reactConcepts = [
       ],
     },
   },
+  {
+    contentName: "6. Difference between React & Angular",
+    contentTable: {
+      headers: ["Feature", "React 🟦", "Angular 🔴"],
+      rows: [
+        ["Type", "Library (for UI)", "Full-fledged Framework"],
+        ["Architecture", "Component-based", "Component-based with MVC"],
+        ["Language", "JavaScript & JSX", "TypeScript"],
+        [
+          "DOM Handling",
+          "Virtual DOM (faster updates)",
+          "Real DOM (slower updates)",
+        ],
+        ["Data Binding", "One-way data binding", "Two-way data binding"],
+        [
+          "Performance",
+          "Faster due to Virtual DOM",
+          "Slower due to heavy features",
+        ],
+        [
+          "Learning Curve",
+          "Easier (only UI-focused)",
+          "Steeper (many built-in features)",
+        ],
+        [
+          "State Management",
+          "Needs Redux, Context API, or Zustand",
+          "Built-in services for state management",
+        ],
+        ["Routing", "Needs React Router", "Built-in routing"],
+        [
+          "Usage",
+          "Lightweight, best for SPAs",
+          "Best for large enterprise apps",
+        ],
+      ],
+    },
+  },
 ];
 
 const reactComponents = [
@@ -905,7 +943,107 @@ d. This way the data model and the UI are kept in sync.`,
       `Use two-way data binding for rapid development and interactive user interfaces where changes in the UI should automatically update the data and vice versa.`,
       `Two-way data binding simplifies development by automatically synchronizing the data and UI components, but can lead to complex data flows and unintended side effects.`,
     ],
-  }
+  },
+  {
+    contentName: "6. Difference between One-Way and Two-Way Data Binding",
+    contentTable: {
+      headers: ["Feature", "One-Way Data Binding", "Two-Way Data Binding"],
+      rows: [
+        [
+          "Definition",
+          "Data flows in a single direction, either from the model to the view or vice versa.",
+          "Data flows in both directions, from the model to the view and vice versa.",
+        ],
+        [
+          "Data Flow",
+          "Changes in the model update the view, but changes in the view do not affect the model directly.",
+          "Changes in the model update the view, and changes in the view update the model as well.",
+        ],
+        [
+          "Predictability",
+          "Simpler and more predictable data flow.",
+          "Automatically synchronizes data and UI components.",
+        ],
+        [
+          "Side Effects",
+          "Reduces the risk of unintended side effects.",
+          "Can lead to complex data flows and unintended side effects.",
+        ],
+        [
+          "Development",
+          "Easier to debug and maintain.",
+          "Simplifies development by reducing manual data updates.",
+        ],
+      ],
+    },
+  },
+  {
+    contentName: "7. Single Page Applications (SPAs)",
+    contentList: [
+      `Single Page Applications (SPAs) are web applications that load a single HTML page and dynamically update the content based on user interactions.`,
+      `SPAs use client-side routing and data binding to provide a seamless and interactive user experience.`,
+      `React, Angular, and Vue are popular frontend frameworks for building SPAs.`,
+      `SPAs are fast, responsive, and provide a more native app-like experience compared to traditional multi-page applications.`,
+      `Common features of SPAs include lazy loading, routing, data binding, and dynamic content updates.`,
+    ],
+  },
+  {
+    contentName: "8. Multi-Page Applications (MPAs)",
+    contentList: [
+      `Multi-Page Applications (MPAs) are traditional web applications that load a new HTML page for each user interaction.`,
+      `MPAs use server-side routing and rendering to generate new pages in response to user actions.`,
+      `MPAs are slower, less interactive, and require full page reloads for each user interaction.`,
+      `MPAs are suitable for content-heavy websites, blogs, and e-commerce platforms that don't require real-time updates or dynamic content.`,
+      `Common features of MPAs include server-side rendering, traditional navigation, and static content delivery.`,
+    ],
+  },
+  {
+    contentName: "a. Does React support MPAs?",
+    contentList: [
+      `React is primarily designed for building Single Page Applications (SPAs) with client-side routing and data binding.`,
+      `While React can be used to build Multi-Page Applications (MPAs) with server-side rendering, it is not the ideal choice for traditional content-heavy websites that require full page reloads.`,
+      `For MPAs, frameworks like Next.js or Gatsby are recommended, as they provide server-side rendering and static site generation for better performance and SEO.`,
+    ],
+    padLeft: true,
+  },
+  {
+    contentName: "b. SPA vs MPA: Pros and Cons",
+    contentTable: {
+      headers: [
+        "Feature",
+        "Single Page Applications (SPAs)",
+        "Multi-Page Applications (MPAs)",
+      ],
+      rows: [
+        [
+          "Performance",
+          "Faster performance due to client-side routing and dynamic content updates.",
+          "Slower performance due to full page reloads and server-side rendering.",
+        ],
+        [
+          "User Experience",
+          "Interactive and seamless user experience with real-time updates.",
+          "Less interactive and slower user experience with full page reloads.",
+        ],
+        [
+          "Development",
+          "Easier development with client-side routing and data binding.",
+          "Complex development with server-side routing and rendering.",
+        ],
+        [
+          "SEO",
+          "Requires additional effort for SEO optimization due to client-side rendering.",
+          "Better SEO optimization with server-side rendering and static site generation.",
+        ],
+        [
+          "Recommended Use",
+          "Best for interactive web applications, dashboards, and real-time updates.",
+          "Best for content-heavy websites, blogs, and e-commerce platforms.",
+        ],
+      ],
+    },
+    padLeft: true,
+  },
 ];
 
 export {
