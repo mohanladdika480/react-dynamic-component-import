@@ -1,6 +1,6 @@
 import React from "react";
 import ContentRenderer from "../../Common/ContentRenderer";
-import { componentLifeCycle, reactHooks, useStateHook } from "./LifecycleAndHooksData";
+import { componentLifeCycle, reactHooks, useEffectHook, useStateHook } from "./LifecycleAndHooksData";
 
 const conceptData = {
   topic: "React Component Lifecycle and Hooks",
@@ -16,6 +16,10 @@ const conceptData = {
     {
       topicName: "useState hook",
       detailedList: useStateHook,
+    },
+    {
+      topicName: "useEffect hook",
+      detailedList: useEffectHook,
     }
   ],
 };
